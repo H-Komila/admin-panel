@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Diplomata&family=DynaPuff:wght@400..700&family=Fascinate&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Paprika&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rosarivo:ital@0;1&family=Rubik+Beastly&family=Rubik+Dirt&family=Rubik+Gemstones&family=Rubik+Puddles&family=Schoolbell&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Diplomata&family=DynaPuff:wght@400..700&family=Fascinate&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Paprika&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&family=Rubik+Puddles&family=Schoolbell&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Diplomata&family=DynaPuff:wght@400..700&family=Fascinate&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Paprika&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Puddles&family=Schoolbell&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.header-container{
+    display: flex;
+    min-height: 100vh;
+}
+.header-left{
+    max-width: 300px;
+    margin: 0 auto;
+    max-height: 100vh;
+    height: 100%;
+    width: 40%;
+    background: #fff;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+.header-logos{
+    border-radius: 50%;
+    border: 5px solid rgb(1, 1, 1);
+    margin-bottom: 20px;
+    margin: 10px;
+} 
+.header-logo{
+    text-align: center;
+}
+.header-text{
+    margin-bottom: 20px;
+    font-family: Rubik Puddles;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.header-user-wrapper{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    font-family: Rubik Dirt;
+    font-size: 12px;
+    transition: transform 0.2s, background-color 0.3s;
+    border-radius: 8px;
+}
+.header-link:hover{
+    color: blue;
+}
+.icon{
+    margin: 20px;
+}
+.header-right{
+   background-image:  linear-gradient(to right, rgba(22, 40, 154, 0.474), rgba(5, 25, 207, 0.452)), url(../images/rasm.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   width: 100%;
+   height: 100vh;
+   padding: 40px;
+   margin-left: 280px;
+   opacity: 1;
+}
+.header-subject{
+    font-family:  Rubik Dirt;
+    font-weight: bold;
+    font-style: Medium;
+    font-size: 26px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #4d52ff;
+    text-align: end;
+
+}
+.header-title{
+    font-family: Rosarivo;
+    font-weight: bold;
+    font-style: Medium;
+    font-size: 26px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+
+}
+.header-text-name{
+    font-family: Rosarivo;
+    font-weight: bold;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.header-list{
+    margin: 20px;
+    margin-top: 25%;
+} 
+@keyframes example{
+    0% {background-color: rgb(156, 243, 243);}
+    25% {background-color: rgb(168, 220, 202);}
+    50% {background-color: #d8cdcd;}
+    75% {background-color: azure;}
+    100% {background-color: bisque;}
+}
+.hero{
+    height: 400px;
+    background: #d8cdcd;
+    animation: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+.hero-container{
+    margin-left: 280px;
+   padding: 20px;
+}
+.hero-list{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hero-item{
+    width: 500px;
+    height: auto;
+}
+.hero-title{
+    font-family: Rosarivo;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 38px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: black;
+}
+.hero-text{
+    font-family: Rosarivo;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    color: rgb(63, 66, 69);
+    margin-bottom: 50px;
+}
+.hero-link-name{
+    font-family:  Rubik Dirt;
+    font-weight: bold;
+    font-style: Medium;
+    font-size: 26px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #4d52ff;
+}
+.hero-link{
+    padding: 10px 40px;
+    color: #fff;
+    background: rgb(0, 0, 145);
+    border-radius: 5px;
+    border: none;
+}
+.hero-link:hover{
+    background: none;
+    color: rgb(43, 43, 255);
+}
+.wrapper{
+    background: #efefef;
+}
+.wrapper-container{
+    margin-left: 280px;
+    padding: 20px;
+}
+.wrapper-img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.wrapper-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@keyframes mymove{
+    70%{box-shadow: 5px 10px 20px rgb(127, 127, 255);}
+}
+.wrapper-item{
+    width: 250px;
+    height: 450px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 8px 8px 8px rgb(75, 73, 73);
+    animation:  mymove 5s infinite
+}
+.wrapper-title{
+    font-family: Rosarivo;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: black;
+}
+.wrapper-text{
+    font-family: Rosarivo;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    color: rgb(63, 66, 69);
+    margin-bottom: 20px;
+}
+.wrapper-link{
+    color: rgb(4, 4, 96);
+}
+.wrapper-link:hover{
+    color: rgb(43, 43, 255);
+}
+.table-container{
+    margin-left: 280px;
+    padding: 40px;
+    box-shadow: 10px 10px 10px #000000;
+    background: #ffff;
+    border-radius: 12px;
+
+} 
+table{
+    border-collapse: collapse;
+    min-height: 400px;
+    margin-top: 40px;
+} 
+thead{
+    background: #0b4967;
+    color: #f7f0f0;
+}
+th, td{
+    padding: 14px 20px;
+    text-align: center;
+    border: 1px solid rgb(23, 24, 24);
+}
+tbody tr{
+    background: #e4c7c7;
+    top: 0;
+    z-index: 1;
+}
+tbody tr:hover{
+    background-color: rgb(107, 171, 232);
+    color: #fff;
+}
+.table-title{
+    font-family: Rosarivo;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+.wigdet-container{
+    margin-left: 280px;
+    padding: 20px;
+}
+.widget-img{
+    width: 150px;
+    height: 100px;
+}
+.widget-item{
+    width: 270px;
+    height: 210px;
+    padding: 10px;
+    color: #fff;
+    background-image:  linear-gradient(to right, rgba(0, 0, 1, 0.5), rgba(51, 53, 69, 0.7)), url(../images/rasm2.jpg);
+}
+.widget-list{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.widget-title{
+     font-family: Rosarivo;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: rgb(247, 241, 241);
+}
+.widget-text{
+    font-family: Rosarivo;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: rgb(250, 252, 255);
+    margin-bottom: 20px;
+}
+.holder{
+    background: #d8cdcd;
+}
+.holder-container{
+    margin-left: 280px;
+    padding: 20px;
+}
+.holder-item{
+    padding: 5px;
+    width: 350px;
+    height: 150px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px rgb(151, 157, 157);
+}
+.holder-list{
+    padding: 40px;
+    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.holder-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    color: rgb(0, 0, 0)
+}
+label{
+     font-family: Rosarivo;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: rgb(69, 50, 50);
+}
+.holder-title-name{
+    font-family: Rosarivo;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 38px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+@keyframes example{
+    0% {background-color: rgb(180, 249, 249);}
+    25% {background-color: rgb(136, 228, 196);}
+    50% {background-color: #bdc5f3;}
+    75% {background-color: azure;}
+    100% {background-color: bisque;}
+}
+.footer-container{
+    margin-left: 280px;
+    padding: 20px;
+}
+.footer-link{
+    color: #fff;
+}
+.footer-link:hover{
+    color: #151df9;
+}
+.footer-list{
+    justify-content: space-between;
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+}
+.footer{
+    background: #000000;
+}
